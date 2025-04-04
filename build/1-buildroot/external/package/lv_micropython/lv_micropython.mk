@@ -31,6 +31,8 @@ endif
 # the git repository as submodules
 LV_MICROPYTHON_MAKE_OPTS += \
 	VARIANT=lvgl \
+	MICROPY_FB=1 \
+	LV_USE_LINUX_FBDEV=1 \
 	MICROPY_PY_BTREE=0 \
 	MICROPY_PY_USSL=0 \
 	CROSS_COMPILE=$(TARGET_CROSS) \
